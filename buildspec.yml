@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Entering Install Phase...
+      - echo Entering Install Phase..
       - npm install
   pre_build:
     commands:
