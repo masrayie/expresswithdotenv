@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "concurrently \"npm index.js\" npx cucumber-js",
+    "test": "concurrently \"node index.js\" npx cucumber-js",
     "dev": "npx nodemon index.js"
   },
   "repository": {
