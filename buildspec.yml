@@ -12,7 +12,7 @@ phases:
     commands:
       - echo Entering build Phase...
       - echo Build started on `date`
-      - node index.js
+      - npm test
   post_build:
     commands:
       - echo Build completed on `date`
