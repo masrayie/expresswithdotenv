@@ -14,10 +14,6 @@ BeforeAll(function() {
     })
 })
 
-// After({tags: "@end"}, function() {
-//     process.exit(0)
-// })
-
 //// Scenario 1 /////
 When(/^send GET request to "([^"]*)"$/, async function (url) {
     let res = await got.get(url)
