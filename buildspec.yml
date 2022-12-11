@@ -19,8 +19,9 @@ phases:
 reports:
   group2-express:
     files:
-      - "output/report/*.json"
+      - "reports/*.json"
     file-format: "CUCUMBERJSON"
+    base-directory: "reports"
 artifacts:
   files:
   - '**/*'
