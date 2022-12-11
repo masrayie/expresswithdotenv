@@ -1,10 +1,22 @@
-const { Given, When, Then } = require('cucumber')
+const { Given, When, Then, After, Before, BeforeAll, AfterAll } = require('@cucumber/cucumber')
 const got = require('got')
 const assert = require('assert')
+const {appServer, port} = require('../../index')
+const { timeout } = require('nodemon/lib/config')
 
 var employeeName
 var resStatusCode1
 var resStatusCode2
+
+BeforeAll(function() {
+    appServer.listen(port, () => {
+        console.log('Server is up on port', port)
+    })
+})
+
+// After({tags: "@end"}, function() {
+//     process.exit(0)
+// })
 
 //// Scenario 1 /////
 When(/^send GET request to "([^"]*)"$/, async function (url) {
@@ -51,3 +63,10 @@ Then('the employeeName should be {string}', function (expectedResponse) {
     console.log('empName', employeeName)
     assert.equal(employeeName, expectedResponse)
 });
+
+// AfterAll(timeout=60,
+
+// AfterAll(function() {
+//     console.log('cik')
+//     process.exit(0)
+// })

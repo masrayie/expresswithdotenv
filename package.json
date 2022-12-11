@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "concurrently \"node index.js\" npx cucumber-js",
+    "test": "npx cucumber-js --exit",
     "dev": "npx nodemon index.js"
   },
   "repository": {
@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/masrayie/expresswithdotenv#readme",
   "dependencies": {
+    "@cucumber/cucumber": "^8.9.0",
     "concurrently": "^7.6.0",
     "cors": "^2.8.5",
-    "cucumber": "^6.0.7",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "got": "^11.8.3",

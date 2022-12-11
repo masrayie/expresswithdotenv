@@ -14,6 +14,7 @@ Feature: Employee API
             """
         Then insertEmployee result the status code should be 201
     
+    @end
     Scenario: Get Employee By employeeId
         When send GET request with employeeId to "http://localhost:5050/api/employee/2"
         Then the employeeName should be "Rangga"

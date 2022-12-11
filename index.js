@@ -12,6 +12,11 @@ app.use(cors())
 
 app.use('/api', employeeRouter)
 
-app.listen(port, () => {
-    console.log('Server is up on port', port)
-})
+module.exports = {
+    port: port,
+    appServer: app
+}
+
+// app.listen(port, () => {
+//     console.log('Server is up on port', port)
+// })
