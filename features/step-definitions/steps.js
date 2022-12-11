@@ -63,10 +63,3 @@ Then('the employeeName should be {string}', function (expectedResponse) {
     console.log('empName', employeeName)
     assert.equal(employeeName, expectedResponse)
 });
-
-// AfterAll(timeout=60,
-
-// AfterAll(function() {
-//     console.log('cik')
-//     process.exit(0)
-// })
