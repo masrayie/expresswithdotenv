@@ -24,4 +24,4 @@ reports:
 artifacts:
   files:
   - '**/*'
-  - name: expressgroup2
+  name: expressgroup2
