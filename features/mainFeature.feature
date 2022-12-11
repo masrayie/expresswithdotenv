@@ -8,7 +8,7 @@ Feature: Employee API
             """
             {
             "employeeId":"2",
-            "employeeName":"Budi",
+            "employeeName":"Rangga",
             "age":20
             }
             """
