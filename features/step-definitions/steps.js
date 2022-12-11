@@ -14,7 +14,7 @@ BeforeAll(function() {
     })
 })
 
-// START ///
+/// START ///
 
 //// Scenario 1 /////
 When(/^send GET request to "([^"]*)"$/, async function (url) {
