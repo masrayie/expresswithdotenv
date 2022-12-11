@@ -1,0 +1,5 @@
+{
+    "default": {
+        "format": ["json:cucumber-report.json", "html:cucumber-report.html"]
+    }
+}
