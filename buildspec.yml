@@ -17,11 +17,6 @@ phases:
     commands:
       - echo Build completed on `date`
 reports:
-  group2-express: #surefire junit reports   
-    files:
-      - '**/*'
-   base-directory: 'output/reports/'
-reports:
   group2-express:
     files:
       - "output/report/*.json"
@@ -29,3 +24,4 @@ reports:
 artifacts:
   files:
   - '**/*'
+  - name: expressgroup2
