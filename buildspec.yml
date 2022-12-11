@@ -16,6 +16,16 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
+#reports:
+#  group2-ted: #surefire junit reports   
+#    files:
+#      - '**/*'
+#   base-directory: 'target/surefire-reports/'
+#reports:
+#  group2-ted:
+#    files:
+#      - "target/surefire-reports/*.json"
+#    file-format: "CUCUMBERJSON"
 artifacts:
   files:
   - '**/*'
