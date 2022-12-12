@@ -17,11 +17,15 @@ phases:
     commands:
       - echo Build completed on `date`
 reports:
+ group2-express:
+   files:
+     - '**/*'
+   base-directory: 'reports/'
+reports:
   group2-express:
     files:
       - "reports/cucumber-report.json"
     file-format: "CUCUMBERJSON"
-    base-directory: "reports"
 artifacts:
   files:
   - '**/*'
