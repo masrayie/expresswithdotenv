@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js --format json --config cucumber/config.json --exit",
+    "test": "npx cucumber-js --format json --exit",
     "dev": "npx nodemon index.js"
   },
   "repository": {
