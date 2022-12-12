@@ -40,7 +40,7 @@ When(/^send POST request to "([^"]*)", the data is$/, async function (url, docSt
     try {
         let res = await got.post(url, data)
         resStatusCode2 = res.statusCode
-        console.log('When send POST request to "http://localhost:5050/api/employee/insert", the data is "{"employeeId":"2", "employeeName":"Budi", "age":20 }"')
+        console.log('When send POST request to "http://localhost:5050/api/employee/insert", the data is "{"employeeId":"2", "employeeName":"Rangga", "age":20 }"')
         console.log('SCENARIO 2 - STEP 1 - OUTPUT -> POST SUCCESS')
     } catch (e) {
         console.log('error', e)
