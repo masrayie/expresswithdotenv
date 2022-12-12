@@ -17,7 +17,7 @@ phases:
     commands:
       - echo Build completed on `date`
 reports:
- group2-express:
+  group2-express:
    files:
      - '**/*'
    base-directory: 'reports/'
